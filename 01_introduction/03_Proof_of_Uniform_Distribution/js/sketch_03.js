@@ -30,7 +30,7 @@ function setup() {
 // The 'draw' function is called in a loop. Everything that is in the function is executed continuously
 function draw() {
   // Background will be redrawn every time
-  background(230);
+  background(255);
 
   // Randomly select a number between 0-19
   var index = floor(random(total));

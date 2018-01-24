@@ -18,7 +18,7 @@ function setup() {
   canvas.parent('canvas');
 
   // Setting the color of the canvas background
-  background(230);
+  background(255);
 }
 
 // The 'draw' function is called in a loop. Everything that is in the function is executed continuously

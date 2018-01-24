@@ -21,7 +21,7 @@ function setup() {
   canvas.parent('canvas');
 
   // Setting the color of the canvas background
-  background(230);
+  background(255);
 
   // Creating an object of the 'walker' class
   walker = new Walker();

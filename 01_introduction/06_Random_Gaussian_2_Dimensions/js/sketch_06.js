@@ -29,7 +29,7 @@ function draw() {
   var xLoc = randomGaussian();
   var yLoc = randomGaussian();
 
-  var xSD = 50;
+  var xSD = 100;
   var ySD = 50;
 
   var xMean = width / 2;
@@ -39,18 +39,11 @@ function draw() {
   yLoc = (yLoc * ySD) + yMean;
 
   var rColor = floor(random(colors.length));
-  var radius = 4;
 
   var xDifference = Math.abs(xLoc - xMean);
   var yDifference = Math.abs(yLoc - yMean);
 
-  if ((xLoc - xSD) <= xMean && (xLoc + xSD) >= xMean && (yLoc - ySD) <= yMean && yMean && (yLoc + ySD) >= yMean) {
-    radius = radius + 10;
-  } else if ((xLoc - xSD * 2) <= xMean && (xLoc + xSD * 2) >= xMean && (yLoc - ySD * 2) <= yMean && yMean && (yLoc + ySD * 2) >= yMean) {
-    radius = radius + 6;
-  } else {
-    radius = radius + 2;
-  }
+  var radius = map(xDifference, 0, width, 20, 1);
 
   fill(colors[rColor]);
   noStroke();
