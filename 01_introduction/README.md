@@ -1,8 +1,8 @@
-# Nature of Code: Randomness, Perlin Noise, Probability
+## Nature of Code: Randomness, Perlin Noise, Probability
 
 This section of the repository covers; Randomness, Perlin Noise and Probability.
 
-## Sections to be covered
+### Sections to be covered
 1. [Random Walker: 4 Outcomes](01_Random_Walker_with_4_outcomes)
 2. [Random Walker: 9 Outcomes](02_Random_Walker_with_9_outcomes)
 3. [Proof of Uniform Distribution](03_Proof_of_Uniform_Distribution)
