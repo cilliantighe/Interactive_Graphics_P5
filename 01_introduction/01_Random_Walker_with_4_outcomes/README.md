@@ -6,8 +6,8 @@ When refering to instance variables in a class you must use 'this'
 
 ```js
 function Walker() {
-  this.x = width / 2;
-  this.y = height / 2;
+    this.x = width / 2;
+    this.y = height / 2;
 }
 ```
 
@@ -19,7 +19,6 @@ function Walker() {
         stroke(50);
         point(this.x, this.y);
     }
-    
   this.step = function () {
         var choice = floor(random(4));
         if (choice === 0) {
@@ -45,3 +44,35 @@ This method sets the stroke of the point to be created to '50' (dark grey) and t
 #### Step Method
 The step method randomly selects a number between 0-4. Depending on what number was chosen, it will check to see which case is correct and increase/decrease the x/y position.
 The 'constrain' function below ensures that the x/y co-ordinates stay within the canvas bounds
+
+### Setup & Draw
+In P5 there are two main methods that need to be called. These are 'Setup' and 'Draw'. Everything that is wrapped within the 'Steup' method is only called **ONCE**
+
+```js
+function setup() {
+    var cWidth = $("#canvas").width();
+    var cHeight = 500;
+    var canvas = createCanvas(cWidth, cHeight);
+
+    canvas.parent('canvas');
+
+    background(255);
+
+    walker = new Walker();
+}
+```
+
+In the code above I'm using a bit of JQuery to get the width of the element with the id of 'canvas'. I'm doing this to allow the size of the canvas to be dynamic. After that, the canvas is created with the desired sizes and moved to be a parent of 'canvas'. This way it sits inside the div and takes up the full space.
+The color of the background is then set to '255' and an object is created from the 'Walker' class.
+
+In contrast to Setup, Draw does everything within the method in a contiguous loop
+
+```js
+function draw() {
+    walker.render();
+    walker.step();
+}
+```
+
+The 'draw' method will call the 'render' and 'step' method in a loop which will result in a dot moving across the screen
+
