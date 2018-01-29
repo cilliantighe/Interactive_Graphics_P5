@@ -22,7 +22,7 @@ The updated code is more efficient than the old code. This structure allows for 
 1. 0,0
 2. 0,1
 3. 0,-1
-4, 1,0
+4. 1,0
 5. 1,1
 6. 1,-1
 7. -1,0
