@@ -2,7 +2,7 @@
 Interactive Graphics
 Author: Cillian Tighe
 Student No: N00152737
-Sketch_02
+Sketch_08
 */
 
 // Variable to act as an object of the 'Walker' class
@@ -29,6 +29,10 @@ function setup() {
 
 // The 'draw' function is called in a loop. Everything that is in the function is executed continuously
 function draw() {
+
+    noStroke();
+    fill(255, 50);
+    rect(0, 0, width, height)
     // Calling the render and step function in a loop
     walker.render();
     walker.step();
@@ -37,23 +41,24 @@ function draw() {
 function Walker() {
     // Positioning the 'walker' in the centre of the canvas
     this.x = width / 2;
-    this.y = height / 2;
 
-    // Creating a function called 'render' that draws a point at the given co-ordinates
+    // A variable that will hold a random number between 0 - width of canvas
+    this.xOff = random(width);
+
+    // Creating a function called 'render' that draws an 'ellipse' at the given co-ordinates
     this.render = function () {
-        stroke(50);
-        point(this.x, this.y);
+        noStroke();
+        fill(255, 0, 200, 50);
+        ellipse(this.x, height / 2, 40, 40);
     }
 
-    // Creating a function called 'step' to move the current position of the 'point'
+    // Creating a function called 'step' to move the current position of the 'ellipse'
     this.step = function () {
-        var stepX = floor(random(-1, 2));
-        var stepY = floor(random(-1, 2));
 
-        this.x = this.x + stepX;
-        this.y = this.y + stepY;
+        // Changing the position of the 'x' co-ordinate by using the 'noise' function to return a number between 0/1 and upscale that to 0/width of the canvas
+        this.x = map(noise(this.xOff), 0, 1, 0, width);
 
-        this.x = constrain(this.x, 0, width);
-        this.y = constrain(this.y, 0, height);
+        // Increment xOff
+        this.xOff += 0.005;
     }
 }

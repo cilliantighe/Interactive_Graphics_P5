@@ -2,7 +2,7 @@
 Interactive Graphics
 Author: Cillian Tighe
 Student No: N00152737
-Sketch_02
+Sketch_04
 */
 
 // Variable to act as an object of the 'Walker' class
@@ -47,12 +47,29 @@ function Walker() {
 
     // Creating a function called 'step' to move the current position of the 'point'
     this.step = function () {
-        var stepX = floor(random(-1, 2));
-        var stepY = floor(random(-1, 2));
 
-        this.x = this.x + stepX;
-        this.y = this.y + stepY;
+        // An array that increases the probability of certain numbers being picked
+        // '-1' has 40%, '0' has 40%, '1' has 20%
+        var probArray = [];
+        probArray[0] = 0;
+        probArray[1] = 1;
+        probArray[2] = -1;
+        probArray[3] = -1;
+        probArray[4] = 0;
 
+        // Randomly getting a number based off the length of the array. Length is 5. Random number 0-5
+        var xIndex = floor(random(probArray.length));
+        var yIndex = floor(random(probArray.length));
+
+        // Retrieving the number from the array and placing it into a variable
+        var xDirection = probArray[xIndex];
+        var yDirection = probArray[yIndex];
+
+        // Adding the selected number to the current position
+        this.x = this.x + xDirection;
+        this.y = this.y + yDirection;
+
+        //Constraining the position within the canvas
         this.x = constrain(this.x, 0, width);
         this.y = constrain(this.y, 0, height);
     }
