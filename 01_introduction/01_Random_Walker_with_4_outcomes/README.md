@@ -1,6 +1,6 @@
-# Random Walker: 4 Outcomes
+## Random Walker: 4 Outcomes
 
-## Walker Class
+### Walker Class
 In this exercise a class called 'Walker' is created. The 'Walker' class has two instance variables. These are; 'x' and 'y'.
 When refering to instance variables in a class you must use 'this'
 
@@ -39,9 +39,9 @@ function Walker() {
 
 As shown above, the 'Walker' class has two methods. 'render' and 'step' are methods that are unique to each instance of the 'Walker' class. 
 
-### Render Method
+#### Render Method
 This method sets the stroke of the point to be created to '50' (dark grey) and then calls the 'point' method to draw a point at the co-ordinates given
 
-### Step Method
+#### Step Method
 The step method randomly selects a number between 0-4. Depending on what number was chosen, it will check to see which case is correct and increase/decrease the x/y position.
 The 'constrain' function below ensures that the x/y co-ordinates stay within the canvas bounds
