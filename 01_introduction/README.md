@@ -1,6 +1,6 @@
-# The Nature of Code - P5
+# Nature of Code: Randomness, Perlin Noise, Probability
 
-This section covers areas including randomness, probablilty and Perlin Noise
+This section of the repository covers; Randomness, Perlin Noise and Probability.
 
 ## Sections to be covered
 1. [Random Walker: 4 Outcomes](01_Random_Walker_with_4_outcomes)
