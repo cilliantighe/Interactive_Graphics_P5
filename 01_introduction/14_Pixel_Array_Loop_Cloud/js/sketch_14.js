@@ -31,7 +31,7 @@ function draw() {
 
     // Loads a snapshot of the current window into the 'pixels' array
     loadPixels();
-    
+
     // Loop for indexing through each pixel on the screen
     for (var y = 0; y < height; y++) {
         var xOff = 0.0;
