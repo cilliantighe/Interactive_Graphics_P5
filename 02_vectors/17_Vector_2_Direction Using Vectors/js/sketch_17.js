@@ -18,7 +18,7 @@ function setup() {
   var cWidth = $("#canvas").width();
   var cHeight = 500;
   var canvas = createCanvas(cWidth, cHeight);
-    
+
     // Creating vectors to hold 'x' and 'y' co-ordinates and their velocity
     position = createVector(width / 2, height / 2);
     velocity = createVector(2, 2);
@@ -31,7 +31,7 @@ function setup() {
 function draw() {
 
   // Setting the color of the canvas background
-  background(250);
+  background(255);
 
   // Incrementing the position of the ellipse
   position.x = position.x + velocity.x;
@@ -47,6 +47,6 @@ function draw() {
 
   // Styling the ellipse
   noStroke();
-  fill(255, 126, 0, 255);
+  fill(254, 51, 102, 255);
   ellipse(position.x, position.y, diameter, diameter);
 }

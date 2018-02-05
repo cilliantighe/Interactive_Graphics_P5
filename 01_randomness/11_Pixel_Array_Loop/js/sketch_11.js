@@ -24,19 +24,19 @@ function setup() {
 
 // The 'draw' function is called in a loop. Everything that is in the function is executed continuously
 function draw() {
-    
+
     // Loads a snapshot of the current window into the 'pixels' array
     loadPixels();
-    
+
     // Loop for indexing through each pixel on the screen
     for (var y = 0; y < height; y++) {
         for (var x = 0; x < width; x++) {
             var index = (x + (y * width)) * 4;
-            
+
             // The loop will color the entire screen red
-            pixels[index + 0] = 255;
-            pixels[index + 1] = 0;
-            pixels[index + 2] = 0;
+            pixels[index + 0] = 254;
+            pixels[index + 1] = 51;
+            pixels[index + 2] = 102;
             pixels[index + 3] = 255;
         }
     }

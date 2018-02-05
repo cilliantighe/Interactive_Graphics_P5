@@ -31,7 +31,7 @@ function setup() {
 function draw() {
 
   // Setting the color of the canvas background
-  background(250);
+  background(255);
 
   // Incrementing the position of the ellipse using vector addition
   position.add(velocity);
@@ -46,6 +46,6 @@ function draw() {
 
   // Styling the ellipse
   noStroke();
-  fill(255, 126, 0, 255);
+  fill(254, 51, 102, 255);
   ellipse(position.x, position.y, diameter, diameter);
 }

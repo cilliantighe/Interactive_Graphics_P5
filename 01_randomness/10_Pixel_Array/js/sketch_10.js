@@ -36,9 +36,9 @@ function draw() {
     var index = (x + (y * width)) * 4;
 
     // 0 = Red, 1 = Green, 2 = Blue, 3 = Alpha
-    pixels[index + 0] = 255;
-    pixels[index + 1] = 0;
-    pixels[index + 2] = 0;
+    pixels[index + 0] = 254;
+    pixels[index + 1] = 51;
+    pixels[index + 2] = 102;
     pixels[index + 3] = 255;
 
     // Updates any changes that were made to the 'pixel' array

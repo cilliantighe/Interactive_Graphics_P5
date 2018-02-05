@@ -5,7 +5,7 @@ Student No: N00152737
 Sketch_07
 */
 
-var colors = ['#ffc0d0', '#ff80a0', '#ff4070', '#ff0040', '#c00030'];
+var colors = ['#fe3366', '#fe4d7a', '#fe1b53', '#fe80a0', '#ffccd9'];
 
 // The 'setup' function is only called once. Everything within the function is executed once
 function setup() {
@@ -31,24 +31,24 @@ function draw() {
     var yLoc = randomGaussian();
 
     // Setting up the Standard Deviation
-    var xSD = 100;
+    var xSD = 150;
     var ySD = 50;
 
-    // Setting the mean to half the canvas width/height 
+    // Setting the mean to half the canvas width/height
     var xMean = width / 2;
     var yMean = height / 2;
-    
+
     // Calculating the x/y co-ordinates for the circle
     xLoc = (xLoc * xSD) + xMean;
     yLoc = (yLoc * ySD) + yMean;
-    
+
     // Randomly selecting a color from the array declared above
     var rColor = floor(random(colors.length));
-    
+
     // Calculating the difference between the position of the circle to the mean
     var xDifference = Math.abs(xLoc - xMean);
     var yDifference = Math.abs(yLoc - yMean);
-    
+
     // Depending on the difference between the position of the circle and mean, the size will vary in size
     var radius = map(xDifference, 0, width / 2, 15, 1);
 

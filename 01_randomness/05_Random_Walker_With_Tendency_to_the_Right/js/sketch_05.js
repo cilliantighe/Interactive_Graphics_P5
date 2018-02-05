@@ -41,7 +41,7 @@ function Walker() {
 
     // Creating a function called 'render' that draws a point at the given co-ordinates
     this.render = function () {
-        stroke(50);
+        stroke(254, 51, 102);
         point(this.x, this.y);
     }
 

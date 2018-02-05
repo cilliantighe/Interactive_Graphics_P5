@@ -27,17 +27,17 @@ function draw() {
     // Returns a random number between 1 / -1 (68%), 2 / -2 (97%). Mean of 0 and Standard Deviation of 1
     var xLoc = randomGaussian();
     console.log(xLoc);
-    
+
     // Setting Standard Deviation to 60
-    var sd = 60;
-    
+    var sd = 100;
+
     // Mean is half the width of the canvas (centred)
     var mean = width / 2;
-    
+
     // Calculating the correct position of the circle to be drawn
     xLoc = (xLoc * sd) + mean;
 
-    fill(0, 10);
+    fill(254, 51, 102, 10);
     noStroke();
     ellipse(xLoc, height / 2, 16, 16);
 }

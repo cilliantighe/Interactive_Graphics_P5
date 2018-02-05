@@ -39,7 +39,7 @@ function draw() {
     rectArray[index]++;
 
     // Setting up the style of the rectangles
-    stroke(0);
+    stroke(254, 51, 102);
     strokeWeight(2);
     fill(255);
 

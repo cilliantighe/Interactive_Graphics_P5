@@ -46,7 +46,7 @@ function Walker() {
     // Creating a function called 'render' that draws a point at the given co-ordinates
     this.render = function () {
         noStroke();
-        fill(255, 0, 200, 50);
+        fill(254, 51, 102);
         ellipse(this.position.x, this.position.y, map(noise(this.nOff.x), 0, 1, 20, 200), map(noise(this.nOff.x), 0, 1, 20, 200));
     }
 

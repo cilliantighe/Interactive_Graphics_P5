@@ -31,13 +31,12 @@ function draw() {
 
   // This will draw a rectangle on the top of the canvas with the same magnitude as the line between the mouse and centerpoint
   var m = vectorLine.mag();
-  fill(0);
-  stroke(0);
+  fill(254, 51, 102);
   rect(0, 0, m, 10);
 
   // In order to draw the line at the appropriate location, we need to translate the line to be drawn
   translate(width / 2, height / 2);
   strokeWeight(2);
-  stroke(0);
+  stroke(254, 51, 102);
   line(0, 0, vectorLine.x, vectorLine.y);
 }

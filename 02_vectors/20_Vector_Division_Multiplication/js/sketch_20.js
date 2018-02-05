@@ -33,6 +33,6 @@ function draw() {
   // In order to draw the line at the appropriate location, we need to translate the line to be drawn
   translate(width / 2, height / 2);
   strokeWeight(2);
-  stroke(0);
+  stroke(254, 51, 102);
   line(0, 0, vectorLine.x, vectorLine.y);
 }
