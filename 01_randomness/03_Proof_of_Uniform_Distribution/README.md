@@ -15,6 +15,7 @@ The setup for the canvas remains the same from previous sketches. In this setup 
 ### Draw Method
 The draw function will redraw the canvas background every frame. This will give the illusion that an object is moving when their position is changed. Each time the draw function is called, a random number is selected (0-19) and assigned to the variable 'index'. This variable is then used to select a position in the 'rectArray' and increment the number in that index location.
 The rectangle is then styled with a stroke and fill color. The width of each rectangle is calculated by dividing the width by number of rectangles to be drawn.
+
 A for loop is then used to create each rectangle. The 'x' position of each rectangle is calculated by multiplying the width by the current index number of the array. The height is then calculated by subtracting the value of the current index into the height of the canvas. This way the rectangle will be drawn from the bottom of the canvas. The width has already be calculated previously but '1' has been subtracted by it for padding. Finally, the height is taken from the value of the current index selected.
 
 ```js
