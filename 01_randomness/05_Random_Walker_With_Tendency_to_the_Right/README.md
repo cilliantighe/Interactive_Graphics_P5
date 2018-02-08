@@ -18,7 +18,4 @@ This is a another way to manipulate the outcome of randomness.
   } else {
       this.y--;
   }
-
-  this.x = constrain(this.x, 0, width - 1);
-  this.y = constrain(this.y, 0, height - 1);
 ```
