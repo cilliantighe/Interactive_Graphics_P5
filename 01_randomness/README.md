@@ -3,8 +3,8 @@
 This section of the repository covers; Randomness, Perlin Noise and Probability.
 
 ### Sections to be covered
-1. [Random Walker: 4 Outcomes](01_Random_Walker_with_4_outcomes)
-2. [Random Walker: 9 Outcomes](02_Random_Walker_with_9_outcomes)
+1. [Random Walker: 4 Outcomes](01_Random_Walker_With_4_outcomes)
+2. [Random Walker: 9 Outcomes](02_Random_Walker_With_9_outcomes)
 3. [Proof of Uniform Distribution](03_Proof_of_Uniform_Distribution)
 4. [Random Walker: Probability](04_Random_Walker_With_Probability)
 5. [Random Walker: Tendency to the Right](05_Random_Walker_With_Tendency_to_the_right)
