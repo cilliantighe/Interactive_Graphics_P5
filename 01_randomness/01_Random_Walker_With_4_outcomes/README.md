@@ -11,7 +11,7 @@ function Walker() {
 }
 ```
 
-This also applies to methods within the class. 
+This also applies to methods within the class.
 
 ```js
 function Walker() {
@@ -36,7 +36,7 @@ function Walker() {
 }
 ```
 
-As shown above, the Walker class has two methods. 'render' and 'step' are methods that are unique to each instance of the Walker class. 
+As shown above, the Walker class has two methods. 'render' and 'step' are methods that are unique to each instance of the Walker class.
 
 #### Render Method
 This method sets the stroke of the point to be created to '50' (dark grey) and then calls the 'point' method to draw a point at the co-ordinates given
@@ -45,7 +45,7 @@ This method sets the stroke of the point to be created to '50' (dark grey) and t
 The step method randomly selects a number between 0-4. Depending on what number was chosen, it will check to see which case is correct and increase/decrease the x/y position.
 The 'constrain' function below ensures that the x/y co-ordinates stay within the canvas bounds
 
-### Setup & Draw
+### Setup & Draw Method
 In P5 there are two main methods that need to be called. These are 'setup' and 'draw'. Everything that is wrapped within the setup method is only called **ONCE**
 
 ```js
@@ -75,4 +75,3 @@ function draw() {
 ```
 
 The draw method will call the render and step method in a loop which will result in a dot moving across the screen
-
