@@ -2,7 +2,7 @@
 Interactive Graphics
 Author: Cillian Tighe
 Student No: N00152737
-Sketch_25
+Sketch_24
 */
 
 var amount = 1000;

@@ -5,7 +5,7 @@ This section of the repository covers; Vectors
 ### Sections to be covered
 1. [Vector: 1 Direction](15_Vector_1_Direction)
 2. [Vector: 2 Directions](16_Vector_2_Directions)
-3. [Vector: 3 Directions Using Vectors](17_Vector_2_Directions_Using_Vectors)
+3. [Vector: 2 Directions Using Vectors](17_Vector_2_Directions_Using_Vectors)
 4. [Vector: Addition](18_Vector_Addition)
 5. [Vector: Subtraction](19_Vector_Subtraction)
 6. [Vector: Division/Multiplication](20_Vector_Division_Multiplication)
