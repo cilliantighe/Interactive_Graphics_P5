@@ -22,14 +22,15 @@ The next part of the class is the 'render' function. This function will draw an 
   }
 ```
 
-The final function is the 'step' function. The 'x' variable's new position is calculated by using the map function. The first parameter of the function is the variable to be used. The noise function is being called on the 'xOff' variable. The noise function will always return a number between 0-1. Each number returned is similar to neighboring numbers.
-The number returned from the map function will be the new 'x' position. The variable 'xOff' is then incremented.
+The final function is the 'step' function. The 'x' variable's new position is calculated by using the map function. The first parameter of the function is the variable to be used.
+The noise function is being called on the 'xOff' variable. The noise function will always return a number between 0-1. Each number returned is similar to neighboring numbers. The number returned from the map function will be the new 'x' position. The variable 'xOff' is then incremented.
 
 ```js
   // Creating a function called 'step' to move the current position of the 'ellipse'
   this.step = function () {
 
-      // Changing the position of the 'x' co-ordinate by using the 'noise' function to return a number between 0/1 and upscale that to 0/width of the canvas
+      // Changing the position of the 'x' co-ordinate by using the 'noise' function to return a number
+      // between 0/1 and upscale that to 0/width of the canvas
       this.x = map(noise(this.xOff), 0, 1, 0, width);
 
       // Increment xOff

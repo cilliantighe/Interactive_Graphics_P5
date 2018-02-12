@@ -22,5 +22,6 @@ A standard deviation, mean and loc variable are declared for the x and y positio
   yLoc = (yLoc * ySD) + yMean;
 ```
 
-The next part of the code calculates the difference between the 'xLox' and 'xMean'. Math.abs makes sure that the number returned is a positive number. The radius variable is calculated by using the map function. The first parameter is the variable you want to use. The next two parameters are the possible outcomes of the variable. The last two parameters are the scaling of the results.
+The next part of the code calculates the difference between the 'xLox' and 'xMean'. Math.abs makes sure that the number returned is a positive number. The radius variable is calculated by using the map function.
+The first parameter is the variable you want to use. The next two parameters are the possible outcomes of the variable. The last two parameters are the scaling of the results.
 The code will have a larger radius for the 'xLoc' variables that are closer to the 'xMean' and a smaller radius further from the 'xMean'

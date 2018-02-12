@@ -32,8 +32,8 @@ function draw() {
     for (var y = 0; y < height; y++) {
         for (var x = 0; x < width; x++) {
             var index = (x + (y * width)) * 4;
-            
-            // Each pixel on the screen will range from black to white on the screen. Giving the display a static look
+
+            // Each pixel on the screen will range from black to white on the screen
             var bright = random(255);
             pixels[index + 0] = bright;
             pixels[index + 1] = bright;
