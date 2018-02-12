@@ -2,6 +2,7 @@
 
 ### Step Method
 This sketch will be looking at another way with manipulating probability. In the 'step' function a variable named 'r' holds a number that is randomly selected between 0-1. If statements are then followed by this.
+
 The probability of the first if statement being true is 40%, the next statement has a 20% chance of being true, the next statement also has a 20% chance of being true and the last statement is if anything above was false but it also has a 20% chance of being true.
 This is a another way to manipulate the outcome of randomness.
 

@@ -1,8 +1,7 @@
 ## Random Gaussian: 2 Dimensions
 
 ### Draw Method
-This sketch will be using two dimensions to place the circles to be drawn. Similar to the previous sketch, this one will be using the 'randomGaussian' function but it will be used for both the x and y direction.
-A standard deviation, mean and loc variable are declared for the x and y positions. The standard deviation does not have to be the same for the x and y.
+This sketch will be using two dimensions to place the circles to be drawn. Similar to the previous sketch, this one will be using the 'randomGaussian' function but it will be used for both the x and y direction.A standard deviation, mean and loc variable are declared for the x and y positions. The standard deviation does not have to be the same for the x and y.
 
 ```js
   // Returns a random number between 1 / -1 (68%), 2 / -2 (97%). Mean of 0 and Standard Deviation of 1
@@ -22,6 +21,6 @@ A standard deviation, mean and loc variable are declared for the x and y positio
   yLoc = (yLoc * ySD) + yMean;
 ```
 
-The next part of the code calculates the difference between the 'xLox' and 'xMean'. Math.abs makes sure that the number returned is a positive number. The radius variable is calculated by using the map function.
-The first parameter is the variable you want to use. The next two parameters are the possible outcomes of the variable. The last two parameters are the scaling of the results.
-The code will have a larger radius for the 'xLoc' variables that are closer to the 'xMean' and a smaller radius further from the 'xMean'
+The next part of the code calculates the difference between the 'xLox' and 'xMean'. Math.abs makes sure that the number returned is a positive number. The radius variable is calculated by using the map function. The first parameter is the variable you want to use.
+
+The next two parameters are the possible outcomes of the variable. The last two parameters are the scaling of the results. The code will have a larger radius for the 'xLoc' variables that are closer to the 'xMean' and a smaller radius further from the 'xMean'

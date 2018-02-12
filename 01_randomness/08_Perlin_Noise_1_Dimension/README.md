@@ -23,6 +23,7 @@ The next part of the class is the 'render' function. This function will draw an 
 ```
 
 The final function is the 'step' function. The 'x' variable's new position is calculated by using the map function. The first parameter of the function is the variable to be used.
+
 The noise function is being called on the 'xOff' variable. The noise function will always return a number between 0-1. Each number returned is similar to neighboring numbers. The number returned from the map function will be the new 'x' position. The variable 'xOff' is then incremented.
 
 ```js
