@@ -2,7 +2,7 @@
 Interactive Graphics
 Author: Cillian Tighe
 Student No: N00152737
-Sketch_24
+Sketch_23
 */
 
 var mover;

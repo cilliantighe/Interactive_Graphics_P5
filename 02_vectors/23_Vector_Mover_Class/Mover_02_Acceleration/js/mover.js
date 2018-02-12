@@ -6,6 +6,7 @@ function Mover() {
   this.diameter = 20;
   this.location = createVector(random(width), random(height));
   this.velocity = createVector(4, 3);
+  this.acceleration = createVector(0.03, 0.04);
 
   // Function to render the circle on the canvas
   this.render = function() {
@@ -16,6 +17,8 @@ function Mover() {
 
   // Function for updating the position on the circle
   this.update = function() {
+    this.velocity.add(this.acceleration);
+    this.velocity.limit(this.maxSpeed);
     this.location.add(this.velocity);
   }
 
@@ -28,14 +31,3 @@ function Mover() {
       this.velocity.y = this.velocity.y * -1;
     }
   }
-
-  // Function for upsizing the circles
-  this.upSize = function() {
-    this.diameter = this.diameter * 2;
-  }
-
-  // Function for downsizing the circles
-  this.downSize = function() {
-    this.diameter = this.diameter * .5;
-  }
-}
