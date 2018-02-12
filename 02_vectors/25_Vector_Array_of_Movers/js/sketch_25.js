@@ -5,7 +5,7 @@ Student No: N00152737
 Sketch_25
 */
 
-var amount = 2000;
+var amount = 1000;
 var mover = [];
 
 // The 'setup' function is only called once. Everything within the function is executed once
@@ -16,6 +16,8 @@ function setup() {
   var cWidth = $("#canvas").width();
   var cHeight = 500;
   var canvas = createCanvas(cWidth, cHeight);
+
+  pixelDensity(1);
 
   // Repositioning the canvas
   canvas.parent('canvas');

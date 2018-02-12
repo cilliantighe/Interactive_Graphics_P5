@@ -47,7 +47,6 @@ function draw() {
 
     // Calculating the difference between the position of the circle to the mean
     var xDifference = Math.abs(xLoc - xMean);
-    var yDifference = Math.abs(yLoc - yMean);
 
     // Depending on the difference between the position of the circle and mean, the size will vary in size
     var radius = map(xDifference, 0, width / 2, 15, 1);

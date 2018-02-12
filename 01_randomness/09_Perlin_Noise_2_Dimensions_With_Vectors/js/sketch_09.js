@@ -40,7 +40,9 @@ function draw() {
 
 function Walker() {
 
+    // Creating vectors for the postion and nOff
     this.position = createVector(width / 2, height / 2);
+    
     this.nOff = createVector(floor(random(width)), floor(random(height)));
 
     // Creating a function called 'render' that draws a point at the given co-ordinates

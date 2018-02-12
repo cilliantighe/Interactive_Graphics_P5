@@ -1,20 +1,22 @@
 // A seperate class file for the 'Mover' class
 function Mover() {
 
+    var colors = ['#fe3366', '#fe4d7a', '#fe1b53', '#fe80a0', '#ffccd9'];
+
     // Instance variables for the class
     this.maxSpeed = 5;
     this.diameter = random(6);
     this.location = createVector(random(width), random(height));
     this.velocity = createVector(3, 3);
     this.acceleration = createVector();
-    this.color = [random(255), random(255), random(255)];
+    this.color = floor(random(colors.length));
     this.mag = 0.1;
 
     // Function to render the circle on the canvas
     this.render = function () {
         noStroke();
-        fill(this.color[0], this.color[1], this.color[2]);
-        rect(this.location.x, this.location.y, this.diameter, this.diameter);
+        fill(colors[this.color]);
+        ellipse(this.location.x, this.location.y, this.diameter, this.diameter);
     }
 
     // Function for updating the position on the circle

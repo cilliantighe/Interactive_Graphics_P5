@@ -1,7 +1,7 @@
 ## Random Walker: Probability
 
 ### Step Method
-In this version of the 'Random Walker' the only thing different is the 'step' method. This sketch shows how to control probability. An array, 'probArray' is created. Indexes 0-4 have been initialised to different values. As seen in the previous sketch, the random function is not entirely random. However, it can be manipulated. In the array there are two '-1', two '0' and one '1'. Therefore there is a 40% chance for '-1' or '0' to be selected and 20% chance for '1' to be selected.
+In this version of the 'Random Walker' the only thing different is the 'step' method. This sketch shows how to control probability. An array, 'probArray' is created. Indexes 0-4 have been initialized to different values. As seen in the previous sketch, the random function is not entirely random. However, it can be manipulated. In the array there are two '-1', two '0' and one '1'. Therefore there is a 40% chance for '-1' or '0' to be selected and 20% chance for '1' to be selected.
 
 ```js
   // An array that increases the probability of certain numbers being picked

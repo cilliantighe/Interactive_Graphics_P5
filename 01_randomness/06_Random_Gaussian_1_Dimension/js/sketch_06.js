@@ -26,9 +26,8 @@ function draw() {
 
     // Returns a random number between 1 / -1 (68%), 2 / -2 (97%). Mean of 0 and Standard Deviation of 1
     var xLoc = randomGaussian();
-    console.log(xLoc);
 
-    // Setting Standard Deviation to 60
+    // Setting Standard Deviation to 100
     var sd = 100;
 
     // Mean is half the width of the canvas (centred)
