@@ -31,7 +31,7 @@ function setup() {
 // The 'draw' function is called in a loop. Everything that is in the function is executed continuously
 function draw() {
 
-  background(255, 150);
+  background(255, 50);
 
   // Loop for rendering and updating every mover object in the array
   for (var i = 0; i < mover.length; i++) {
