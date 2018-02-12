@@ -28,3 +28,4 @@ function Mover() {
       this.velocity.y = this.velocity.y * -1;
     }
   }
+}
