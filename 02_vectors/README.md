@@ -11,6 +11,5 @@ This section of the repository covers; Vectors
 6. [Vector: Division/Multiplication](20_Vector_Division_Multiplication)
 7. [Vector: Magnitude](21_Vector_Magnitude)
 8. [Vector: Normalising](22_Vector_Normalising)
-9. [Vector: Velocity](23_Vector_Velocity)
-10. [Vector: Acceleration](24_Vector_Acceleration)
-11. [Vector: Array of Movers](25_Vector_Array_of_Movers)
+9. [Vector: Mover Class](23_Vector_Mover_Class)
+10. [Vector: Array of Movers](24_Vector_Array_of_Movers)
