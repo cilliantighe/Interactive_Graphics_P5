@@ -34,9 +34,9 @@ function draw() {
             var index = (x + (y * width)) * 4;
 
             // The screen will display a gradient effect on the screen
-            pixels[index + 0] = 255;
-            pixels[index + 1] = y;
-            pixels[index + 2] = x;
+            pixels[index + 0] = y;
+            pixels[index + 1] = 51;
+            pixels[index + 2] = 102;
             pixels[index + 3] = 255;
         }
     }
