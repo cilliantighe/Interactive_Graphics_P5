@@ -25,7 +25,8 @@ A for loop is then used to create each rectangle. The 'x' position of each recta
   // Loop to draw rectangles
   for (var i = 0; i < rectArray.length; i++) {
       // The 'x' position of each rectangle is calculated by multiplying its width by its index position
-      // The 'y' position is calculated by subtracting the height of the canvas by the current number in the index position
+      // The 'y' position is calculated by subtracting the height of the canvas
+      // by the current number in the index position
       rect(i * w, height - rectArray[i], w - 1, rectArray[i]);
     }
 ```
