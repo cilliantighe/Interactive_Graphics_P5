@@ -7,14 +7,16 @@ function Mover() {
   this.location = createVector(random(width), random(height));
   this.velocity = createVector(3, 3);
   this.acceleration = createVector();
-  this.color = [floor(random(255)), floor(random(255)), floor(random(255))];
+  //this.color = [floor(random(255)), floor(random(255)), floor(random(255))];
+  this.color = [floor(random(255)), 51, 102];
   this.mag = 0.1;
 
   // Function to render the circle on the canvas
   this.render = function() {
     noStroke();
-    fill(this.color[0], this.color[1], this.color[2], );
+    fill(this.color[0], this.color[1], this.color[2]);
     ellipse(this.location.x, this.location.y, this.diameter, this.diameter);
+    //rect(this.location.x, this.location.y, this.diameter, this.diameter);
   }
 
   // Function for updating the position on the circle
