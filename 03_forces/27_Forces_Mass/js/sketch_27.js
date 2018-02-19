@@ -2,11 +2,13 @@
 Interactive Graphics
 Author: Cillian Tighe
 Student No: N00152737
-Sketch_27
+Sketch_28
 */
 
-// Variable for mover
-var mover;
+// Variable for mover array
+var movers = [];
+
+var count = 200;
 
 // The 'setup' function is only called once. Everything within the function is executed once
 function setup() {
@@ -17,7 +19,9 @@ function setup() {
   var cHeight = 500;
   var canvas = createCanvas(cWidth, cHeight);
 
-  mover = new Mover(30);
+  for(var i = 0; i < count; i++){
+    movers[i] = new Mover(floor(random(5, 20)));
+  }
 
   // Repositioning the canvas
   canvas.parent('canvas');
@@ -27,18 +31,19 @@ function setup() {
 // The 'draw' function is called in a loop. Everything that is in the function is executed continuously
 function draw() {
 
-  // Creating vector variables
-  var wind = createVector(0.1, 0);
-  var gravity = createVector(0, 0.01);
-
   background(255);
 
-  // Applying multiple forces to the mover object
-  mover.applyForce(wind);
-  mover.applyForce(gravity);
+  for(var i = 0; i < count; i++){
+    // Creating vector variables
+    var wind = createVector(0.1, 0);
+    var gravity = createVector(0, 0.1 * movers[i].mass);
 
-  mover.checkEdges();
-  mover.update();
-  mover.render();
+    // Applying multiple forces to the mover object
+    movers[i].applyForce(wind);
+    movers[i].applyForce(gravity);
 
+    movers[i].checkEdges();
+    movers[i].update();
+    movers[i].render();
+  }
 }
