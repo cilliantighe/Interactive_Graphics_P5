@@ -8,4 +8,4 @@ This section of the repository covers; Forces
 3. [Forces: Mass](27_Forces_Mass)
 4. [Forces: Gravity](28_Forces_Gravity)
 5. [Forces: Friction](29_Forces_Friction)
-6. [Forces: Water Drag](30_Forces_Water_Drag)
+6. [Forces: Drag Force](30_Forces_Drag_Force)
