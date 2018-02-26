@@ -7,8 +7,8 @@ function Mover() {
   this.location = createVector(random(width), random(height));
   this.velocity = createVector(3, 3);
   this.acceleration = createVector();
-  //this.color = [floor(random(255)), floor(random(255)), floor(random(255))];
-  this.color = [floor(random(255)), 51, 102];
+  this.color = [floor(random(255)), floor(random(255)), floor(random(255))];
+  //this.color = [floor(random(255)), 51, 102];
   this.mag = 0.1;
 
   // Function to render the circle on the canvas
