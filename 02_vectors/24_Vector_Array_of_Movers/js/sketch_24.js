@@ -8,6 +8,8 @@ Sketch_24
 var amount = 2000;
 var mover = [];
 
+var colors = ['#fe3366', '#fe4d7a', '#fe1b53', '#fe80a0', '#ffccd9'];
+
 // The 'setup' function is only called once. Everything within the function is executed once
 function setup() {
 
@@ -22,7 +24,8 @@ function setup() {
 
   // Loop for creating an array of 'Mover' objects
   for (var i = 0; i < amount; i++) {
-    mover[i] = new Mover();
+    var color = floor(random(colors.length));
+    mover[i] = new Mover(colors[color]);
   }
 }
 

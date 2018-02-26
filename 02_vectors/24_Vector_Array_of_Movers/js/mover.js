@@ -1,5 +1,5 @@
 // A seperate class file for the 'Mover' class
-function Mover() {
+function Mover(color) {
 
   // Instance variables for the class
   this.maxSpeed = 5;
@@ -7,6 +7,7 @@ function Mover() {
   this.location = createVector(random(width), random(height));
   this.velocity = createVector(3, 3);
   this.acceleration = createVector();
+  //this.color = color;
   this.color = [floor(random(255)), floor(random(255)), floor(random(255))];
   //this.color = [floor(random(255)), 51, 102];
   this.mag = 0.1;
