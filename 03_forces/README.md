@@ -3,7 +3,7 @@
 This section of the repository covers; Forces
 
 ### Sections to be covered
-1. [Forces: Friction](25_Forces_Applying_a_Force)
+1. [Forces: Applying a Force](25_Forces_Applying_a_Force)
 2. [Forces: Force Accumulation](26_Forces_Force_Accumalation)
 3. [Forces: Mass](27_Forces_Mass)
 4. [Forces: Gravity](28_Forces_Gravity)
