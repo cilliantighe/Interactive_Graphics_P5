@@ -9,3 +9,4 @@ This section of the repository covers; Forces
 4. [Forces: Gravity](28_Forces_Gravity)
 5. [Forces: Friction](29_Forces_Friction)
 6. [Forces: Drag Force](30_Forces_Drag_Force)
+7. [Forces: Wind Chimes](31_Forces_Windchime)
