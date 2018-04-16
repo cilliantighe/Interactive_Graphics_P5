@@ -75,3 +75,5 @@ function draw() {
 ```
 
 The draw method will call the render and step method in a loop which will result in a dot moving across the screen
+
+[Example Code](https://cilliantighe.github.io/Interactive_Graphics_P5/01_randomness/01_Random_Walker_With_4_outcomes/)
