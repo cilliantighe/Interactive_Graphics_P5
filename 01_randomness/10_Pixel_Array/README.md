@@ -22,3 +22,5 @@ This is the formula to target a specific pixel on the screen. If we let y=1, x=2
 ```
 
 The pixel above has it's RGBA values changed so the final part of the code is to call the 'updatePixels' function to apply the changes.
+
+---> [Example Code](https://cilliantighe.github.io/Interactive_Graphics_P5/01_randomness/10_Pixel_Array/)

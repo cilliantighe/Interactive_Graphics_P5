@@ -28,3 +28,5 @@ The updated code is more efficient than the old code. This structure allows for 
 7. -1,0
 8. -1,1
 9. -1,1
+
+---> [Example Code](https://cilliantighe.github.io/Interactive_Graphics_P5/01_randomness/02_Random_Walker_With_9_outcomes/)

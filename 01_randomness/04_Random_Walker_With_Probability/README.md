@@ -25,3 +25,5 @@ A random number (0-4) is selected for 'yIndex' and 'xIndex'. That number is then
   var xDirection = probArray[xIndex];
   var yDirection = probArray[yIndex];
 ```
+
+---> [Example Code](https://cilliantighe.github.io/Interactive_Graphics_P5/01_randomness/04_Random_Walker_With_Probability/)

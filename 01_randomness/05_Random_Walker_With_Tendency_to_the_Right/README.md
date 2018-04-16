@@ -21,3 +21,5 @@ This is a another way to manipulate the outcome of randomness.
       this.y--;
   }
 ```
+
+---> [Example Code](https://cilliantighe.github.io/Interactive_Graphics_P5/01_randomness/05_Random_Walker_With_Tendency_to_the_Right/)

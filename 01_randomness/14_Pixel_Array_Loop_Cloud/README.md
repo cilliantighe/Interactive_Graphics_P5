@@ -3,7 +3,7 @@
 A variable named 'yOff' is declared globally.
 
 ### Draw Method
-This sketch will be using the noise function used in previous sketches to create a cloud illusion. Since the noise returns values close to neighboring numbers, the sketch will create a smooth cloud image. 
+This sketch will be using the noise function used in previous sketches to create a cloud illusion. Since the noise returns values close to neighboring numbers, the sketch will create a smooth cloud image.
 
 ```js
   // Loop for indexing through each pixel on the screen
@@ -22,3 +22,5 @@ This sketch will be using the noise function used in previous sketches to create
       yOff += 0.002;
   }
 ```
+
+---> [Example Code](https://cilliantighe.github.io/Interactive_Graphics_P5/01_randomness/14_Pixel_Array_Loop_Cloud/)

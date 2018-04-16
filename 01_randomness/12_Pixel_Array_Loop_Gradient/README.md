@@ -17,3 +17,5 @@ In this sketch the values from 'x' and 'y' are used within the RGB values to cre
       }
   }
 ```
+
+---> [Example Code](https://cilliantighe.github.io/Interactive_Graphics_P5/01_randomness/12_Pixel_Array_Loop_Gradient/)

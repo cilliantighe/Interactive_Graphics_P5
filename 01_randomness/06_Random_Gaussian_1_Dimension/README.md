@@ -22,3 +22,5 @@ The standard deviation is the value that determines the placement of the circles
   noStroke();
   ellipse(xLoc, height / 2, 16, 16);
 ```
+
+---> [Example Code](https://cilliantighe.github.io/Interactive_Graphics_P5/01_randomness/06_Random_Gaussian_1_Dimension/)

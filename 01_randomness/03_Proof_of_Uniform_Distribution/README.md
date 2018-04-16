@@ -30,3 +30,5 @@ A for loop is then used to create each rectangle. The 'x' position of each recta
       rect(i * w, height - rectArray[i], w - 1, rectArray[i]);
     }
 ```
+
+---> [Example Code](https://cilliantighe.github.io/Interactive_Graphics_P5/01_randomness/03_Proof_of_Uniform_Distribution/)

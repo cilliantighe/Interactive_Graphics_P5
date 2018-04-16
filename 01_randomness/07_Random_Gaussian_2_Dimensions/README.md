@@ -24,3 +24,5 @@ This sketch will be using two dimensions to place the circles to be drawn. Simil
 The next part of the code calculates the difference between the 'xLox' and 'xMean'. Math.abs makes sure that the number returned is a positive number. The radius variable is calculated by using the map function. The first parameter is the variable you want to use.
 
 The next two parameters are the possible outcomes of the variable. The last two parameters are the scaling of the results. The code will have a larger radius for the 'xLoc' variables that are closer to the 'xMean' and a smaller radius further from the 'xMean'
+
+---> [Example Code](https://cilliantighe.github.io/Interactive_Graphics_P5/01_randomness/07_Random_Gaussian_2_Dimensions/)
