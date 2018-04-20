@@ -30,3 +30,5 @@ A simple statement checks whether the circle has reached either side of the canv
     xSpeed = xSpeed * -1;
   }
 ```
+
+---> [Example Code](https://cilliantighe.github.io/Interactive_Graphics_P5/02_vectors/15_Vector_1_Direction/)

@@ -1,4 +1,4 @@
-## Vector: 2 Dimensions
+## Vector: 2 Directions Using Vectors
 
 Similar to the previous sketch, this one will be using two dimensions. A new variable
 called 'ySpeed' is created for the speed in the 'y' direction.
@@ -26,4 +26,4 @@ A simple statement checks whether the circle has reached either side of the canv
   }
 ```
 
----> [Example Code](https://cilliantighe.github.io/Interactive_Graphics_P5/02_vectors/16_Vector_2_Directions/)
+---> [Example Code](https://cilliantighe.github.io/Interactive_Graphics_P5/02_vectors/17_Vector_2_Directions_Using_Vectors/)
