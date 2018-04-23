@@ -20,7 +20,10 @@ var mouse = createVector(mouseX, mouseY);
 var center = createVector(width / 2, height / 2);
 var vectorLine = mouse.sub(center);
 
-// This will draw a rectangle on the top of the canvas with the same magnitude as the line between the mouse and centerpoint
+/*
+This will draw a rectangle on the top of the canvas with the same
+magnitude as the line between the mouse and centerpoint
+*/
 var m = vectorLine.mag();
 fill(254, 51, 102);
 rect(0, 0, m, 10);
